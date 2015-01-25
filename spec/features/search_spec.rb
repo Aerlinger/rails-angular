@@ -1,8 +1,16 @@
 require 'spec_helper.rb'
 
 feature "Looking up recipes", js: true do
+  before do
+    Recipe.create!(name: 'Baked Potato w/ Cheese')
+    Recipe.create!(name: 'Garlic Mashed Potatoes')
+    Recipe.create!(name: 'Potatoes Au Gratin')
+    Recipe.create!(name: 'Baked Brussel Sprouts')
+  end
+
   scenario "finding recipes" do
     visit '/'
+    save_and_open_page
     fill_in "keywords", with: "baked"
     click_on "Search"
 
