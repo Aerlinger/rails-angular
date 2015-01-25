@@ -30,6 +30,16 @@ gem 'angular-rails-templates'
 
 gem 'bower-rails'
 
+group :test, :development do
+  gem 'rspec'
+
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'teaspoon'
+  gem 'phantomjs'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
