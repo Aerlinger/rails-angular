@@ -10,7 +10,6 @@ feature "Looking up recipes", js: true do
 
   scenario "finding recipes" do
     visit '/'
-    save_and_open_page
     fill_in "keywords", with: "baked"
     click_on "Search"
 
