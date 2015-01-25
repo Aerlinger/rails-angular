@@ -15,4 +15,4 @@
  */
 
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap-sprockets.scss";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
