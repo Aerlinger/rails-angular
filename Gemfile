@@ -32,6 +32,7 @@ gem 'bower-rails'
 
 group :test, :development do
   gem 'rspec'
+  gem 'rspec-rails'
 
   gem 'capybara'
   gem 'database_cleaner'
